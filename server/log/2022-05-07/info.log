@@ -1,0 +1,402 @@
+[gin/server]2022/05/07 - 10:26:13.382	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.511ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:26:13.398	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[12.729ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:26:13.404	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[6.080ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:26:13.404	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:26:13.405	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.674ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:26:13.407	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[2.506ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:26:13.414	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[6.517ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:26:13.414	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:26:13.415	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.734ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:26:13.418	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[3.474ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:26:13.419	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:26:13.487	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:27:52.399	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:27:52.406	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[5.248ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:27:52.410	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[4.196ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:27:52.410	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:27:52.411	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.532ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:27:52.412	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[1.034ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:27:52.415	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[3.238ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:27:52.416	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.536ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:27:52.417	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.585ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:27:52.422	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[4.025ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:27:52.423	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:27:52.423	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:28:50.024	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:53
+[0m[33m[1.816ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE `uuid` = '2aad2680-a356-4623-bca0-34fe1693e512' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:28:50.024	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:109	获取成功!	{"uuid": "2aad2680-a356-4623-bca0-34fe1693e512"}
+[gin/server]2022/05/07 - 10:29:47.414	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[31;1mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:19 [35;1mrecord not found
+[0m[33m[0.521ms] [34;1m[rows:0][0m SELECT * FROM `sys_users` WHERE username = 'zl' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:29:47.486	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:26
+[0m[33m[20.891ms] [34;1m[rows:1][0m INSERT INTO `sys_users` (`created_at`,`updated_at`,`deleted_at`,`uuid`,`username`,`password`,`nick_name`,`phone`,`email`) VALUES ('2022-05-07 10:29:47.465','2022-05-07 10:29:47.465',NULL,'ea4cf6fd-a885-4bf8-84c0-de8e469e6411','zl','$2a$10$HxNMJg8v5EqodPxylqT/CeeqQwBdDGzbMwwztQRc94xOJ4JptZe8O','0-bit','','')
+
+[gin/server]2022/05/07 - 10:30:20.741	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[31;1mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:19 [35;1mrecord not found
+[0m[33m[1.108ms] [34;1m[rows:0][0m SELECT * FROM `sys_users` WHERE username = 'shr' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:30:20.827	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:26
+[0m[33m[36.637ms] [34;1m[rows:1][0m INSERT INTO `sys_users` (`created_at`,`updated_at`,`deleted_at`,`uuid`,`username`,`password`,`nick_name`,`phone`,`email`) VALUES ('2022-05-07 10:30:20.791','2022-05-07 10:30:20.791',NULL,'3bac231e-0d29-485f-83b8-38e0c6eecf12','shr','$2a$10$gQWyw9HCDEaVmq6L.IaeTOvPK41XE6383Am.Q/wiMwbJpyiMYC.My','孙浩然','','')
+
+[gin/server]2022/05/07 - 10:30:33.779	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[31;1mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:19 [35;1mrecord not found
+[0m[33m[0.768ms] [34;1m[rows:0][0m SELECT * FROM `sys_users` WHERE username = 'chy' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:30:33.903	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:26
+[0m[33m[73.287ms] [34;1m[rows:1][0m INSERT INTO `sys_users` (`created_at`,`updated_at`,`deleted_at`,`uuid`,`username`,`password`,`nick_name`,`phone`,`email`) VALUES ('2022-05-07 10:30:33.83','2022-05-07 10:30:33.83',NULL,'bbd1dee0-74b8-4c7a-92e9-a6ede380aa1e','chy','$2a$10$fxqOunjlotaionl2Gv.xWu.nm51G.daurGm.s9hj1kOwIx2YNOk3C','陈浩宇','','')
+
+[gin/server]2022/05/07 - 10:37:55.858	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.523ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:37:55.862	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[3.380ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:37:55.865	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[3.083ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:37:55.865	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:37:55.865	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.608ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:37:55.866	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.517ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:37:55.868	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[1.692ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:37:55.868	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:37:55.869	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.694ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:37:55.871	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.755ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:37:55.871	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:37:55.871	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:38:03.231	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:38:03.233	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[2.008ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:38:03.234	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.001ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:38:03.235	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.013ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:38:03.235	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:38:03.236	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.139ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:38:03.238	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[0.998ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:38:03.239	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:38:03.239	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.630ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:38:03.241	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.238ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:38:03.241	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:38:03.241	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:47:05.241	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:47:05.243	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.993ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:47:05.245	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[2.666ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:47:05.246	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:47:05.246	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.757ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:47:05.247	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.512ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:47:05.249	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[1.874ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:47:05.250	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:47:05.251	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[1.171ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:47:05.252	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.027ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:47:05.252	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:47:05.252	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:47:31.587	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:61
+[0m[33m[12.307ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `deleted_at`='2022-05-07 10:47:31.576' WHERE id = 4 AND `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 10:47:59.807	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[31;1mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:47 [35;1mrecord not found
+[0m[33m[0.666ms] [34;1m[rows:0][0m SELECT * FROM `sys_users` WHERE `id` = 4 AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:48:05.169	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:47
+[0m[33m[1.079ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE `id` = 3 AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:48:05.169	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:84	获取成功!	{"id": 3}
+[gin/server]2022/05/07 - 10:49:55.643	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.508ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:49:55.654	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[9.288ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:49:55.656	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.583ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 10:49:55.656	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:49:55.656	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.510ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:49:55.657	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.543ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 10:49:55.658	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[1.591ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 10:49:55.659	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 10:49:55.660	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.564ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 10:49:55.661	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[0.984ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 10:49:55.661	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 10:49:55.661	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 10:51:21.901	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[0.539ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 10:51:21.901	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.530ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1
+
+[gin/server]2022/05/07 - 10:56:19.787	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:48
+[0m[33m[1.591ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE `id` = 3 AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 10:56:19.787	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:84	获取成功!	{"id": 3}
+[gin/server]2022/05/07 - 10:57:50.430	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[1.255ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 10:57:50.431	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.524ms] [34;1m[rows:2][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 2
+
+[gin/server]2022/05/07 - 10:58:07.096	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 10:58:07.097	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 2 OFFSET 2
+
+[gin/server]2022/05/07 - 10:58:18.150	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[0.764ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 10:58:18.150	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.000ms] [34;1m[rows:2][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 2
+
+[gin/server]2022/05/07 - 12:37:56.777	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[2.511ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 12:37:56.779	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.515ms] [34;1m[rows:3][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1000
+
+[gin/server]2022/05/07 - 12:38:42.758	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:36
+[0m[33m[0.509ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 12:38:42.759	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:42
+[0m[33m[0.509ms] [34;1m[rows:3][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1000
+
+[gin/server]2022/05/07 - 12:52:23.066	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[1.018ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 12:52:23.098	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[31.054ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 12:52:23.111	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[13.527ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 12:52:23.111	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 12:52:23.112	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[1.030ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 12:52:23.113	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.509ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 12:52:23.132	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[17.736ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 12:52:23.132	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 12:52:23.133	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[1.025ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 12:52:23.139	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[5.875ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 12:52:23.140	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 12:52:23.140	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 12:53:55.058	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:77
+[0m[33m[2.108ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE username = 'dyh' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 12:53:55.238	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:85
+[0m[33m[81.686ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `created_at`='2022-05-06 14:02:43.175',`updated_at`='2022-05-07 12:53:55.158',`deleted_at`=NULL,`uuid`='2aad2680-a356-4623-bca0-34fe1693e512',`username`='dyh',`password`='$2a$10$fhPzeUoYDNhEBkXDWd6o.OP7yIaPlyUFVOeAKwT6OA3LHf/uNoGJW',`nick_name`='pixel-revolve',`phone`='',`email`='' WHERE `sys_users`.`deleted_at` IS NULL AND `id` = 1
+
+[gin/server]2022/05/07 - 12:54:03.557	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:38
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 12:54:03.557	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:44
+[0m[33m[0.000ms] [34;1m[rows:3][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1000
+
+[gin/server]2022/05/07 - 12:55:15.816	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:77
+[0m[33m[1.328ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE username = 'dyh' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 12:55:29.082	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:77
+[0m[33m[0.727ms] [34;1m[rows:1][0m SELECT * FROM `sys_users` WHERE username = 'dyh' AND `sys_users`.`deleted_at` IS NULL ORDER BY `sys_users`.`id` LIMIT 1
+
+[gin/server]2022/05/07 - 12:55:29.205	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:85
+[0m[33m[17.133ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `created_at`='2022-05-06 14:02:43.175',`updated_at`='2022-05-07 12:55:29.189',`deleted_at`=NULL,`uuid`='2aad2680-a356-4623-bca0-34fe1693e512',`username`='dyh',`password`='$2a$10$aiFd7HuIg.UmVTUmuCilG.nrXas7wPRYz//R1yx2vh2Pee7M6kfbG',`nick_name`='pixel-revolve',`phone`='',`email`='' WHERE `sys_users`.`deleted_at` IS NULL AND `id` = 1
+
+[gin/server]2022/05/07 - 13:02:34.031	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:02:34.034	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[2.842ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:02:34.036	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[2.160ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 13:02:34.037	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:02:34.037	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.695ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:02:34.038	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 13:02:34.041	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[1.546ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 13:02:34.041	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:02:34.042	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.706ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:02:34.044	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.467ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 13:02:34.044	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 13:02:34.044	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 13:07:41.573	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:07:41.583	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[8.554ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:07:41.584	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[1.030ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gin' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/05/07 - 13:07:41.584	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:07:41.585	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.635ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:07:41.585	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0m[33m[0.518ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/05/07 - 13:07:41.587	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[0m[33m[1.541ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gin' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/05/07 - 13:07:41.588	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0m[33m[0.519ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/05/07 - 13:07:41.589	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/DYH的编程/Go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0m[33m[0.513ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gin%' ORDER BY SCHEMA_NAME='gin' DESC limit 1
+
+[gin/server]2022/05/07 - 13:07:41.590	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/initialize/gorm.go:29
+[0m[33m[0.956ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gin' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/05/07 - 13:07:41.590	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/07 - 13:07:41.590	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/07 - 13:07:50.533	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:93
+[0m[33m[11.986ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `updated_at`='2022-05-07 13:07:50.522',`nick_name`='pix-rev' WHERE `sys_users`.`deleted_at` IS NULL AND `id` = 1
+
+[gin/server]2022/05/07 - 13:07:58.976	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:38
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 13:07:58.977	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:44
+[0m[33m[0.028ms] [34;1m[rows:3][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1000
+
+[gin/server]2022/05/07 - 13:08:34.584	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:93
+[0m[33m[32.245ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `updated_at`='2022-05-07 13:08:34.553',`phone`='13770808113' WHERE `sys_users`.`deleted_at` IS NULL AND `id` = 1
+
+[gin/server]2022/05/07 - 13:09:04.950	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:93
+[0m[33m[79.281ms] [34;1m[rows:1][0m UPDATE `sys_users` SET `updated_at`='2022-05-07 13:09:04.871',`email`='pixel-revolve@qq.com' WHERE `sys_users`.`deleted_at` IS NULL AND `id` = 1
+
+[gin/server]2022/05/07 - 13:12:12.659	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:38
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT count(*) FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL
+
+[gin/server]2022/05/07 - 13:12:12.659	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/internal/logger.go:31	[32mE:/代码相关/项目/study/go/gin/server/service/system/sys_user.go:44
+[0m[33m[0.000ms] [34;1m[rows:3][0m SELECT * FROM `sys_users` WHERE `sys_users`.`deleted_at` IS NULL LIMIT 1000
+

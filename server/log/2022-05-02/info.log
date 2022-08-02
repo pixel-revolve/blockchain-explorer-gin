@@ -1,0 +1,7 @@
+[gin/server]2022/05/02 - 15:28:14.560	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/02 - 21:21:23.129	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/02 - 21:21:23.130	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/02 - 23:27:42.542	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/02 - 23:27:42.544	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}
+[gin/server]2022/05/02 - 23:30:43.747	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/05/02 - 23:30:43.748	[34minfo[0m	E:/代码相关/项目/study/go/gin/server/core/server.go:23	server run success on 	{"address": ":9090"}

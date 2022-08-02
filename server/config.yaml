@@ -1,0 +1,86 @@
+# zap logger configuration
+zap:
+  level: 'info'
+  format: 'console'
+  prefix: '[gin/server]'
+  director: 'log'
+  show-line: true
+  encode-level: 'LowercaseColorLevelEncoder'
+  stacktrace-key: 'stacktrace'
+  log-in-console: true
+
+# system configuration
+system:
+  env: 'public'  # Change to "develop" to skip authentication for development mode
+  addr: 8080
+  db-type: 'mysql'
+  oss-type: 'local'    # 控制oss选择走本地还是 七牛等其他仓 自行增加其他oss仓可以在 server/utils/upload/upload.go 中 NewOss函数配置
+  use-redis: false     # 使用redis
+  use-multipoint: false
+  # IP限制次数 一个小时15000次
+  iplimit-count: 15000
+  #  IP限制一个小时
+  iplimit-time: 3600
+
+# autocode configuration
+autocode:
+  transfer-restart: true
+  # root 自动适配项目根目录
+  # 请不要手动配置,他会在项目加载的时候识别出根路径
+  root: ""
+  server: /server
+  server-plug: /plugin/%s
+  server-api: /api/v1/%s
+  server-initialize: /initialize
+  server-model: /model/%s
+  server-request: /model/%s/request/
+  server-router: /router/%s
+  server-service: /service/%s
+  web: /web/src
+  web-api: /api
+  web-form: /view
+  web-table: /view
+
+# mysql connect configuration
+# 这里config如果不配置'parseTime=true的话对于时间的orm映射就会出问题'
+mysql:
+  path: 'localhost'
+  port: '3306'
+  config: 'parseTime=true'
+  db-name: 'blockchain_explorer'
+  username: 'root'
+  password: '123456'
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: ""
+  log-zap: true
+
+# pgsql connect configuration
+# 未初始化之前请勿手动修改数据库信息！！！如果一定要手动初始化请看（https://www.github.com/flipped-aurora/gin-vue-admin/server.com/docs/first）
+pgsql:
+  path: ''
+  port: ''
+  config: ''
+  db-name: ''
+  username: ''
+  password: ''
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: ""
+  log-zap: false
+
+db-list:
+  - disabled: true # 是否启用
+    type: "mysql" # 数据库的类型,目前支持mysql、pgsql
+    alias-name: "blockchain_explorer" # 数据库的名称,注意: alias-name 需要在db-list中唯一
+    path: 'localhost'
+    port: '3306'
+    config: ''
+    db-name: 'blockchain_explorer'
+    username: 'root'
+    password: '123456'
+    max-idle-conns: 10
+    max-open-conns: 100
+    log-mode: ""
+    log-zap: false
+

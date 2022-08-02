@@ -1,0 +1,2 @@
+[gin/server]2022/05/06 - 23:30:50.883	[31merror[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:74	获取失败!	{"error": "sql: Scan error on column index 7, name \"created_at\": unsupported Scan, storing driver.Value type []uint8 into type *time.Time"}
+[gin/server]2022/05/06 - 23:59:40.679	[31merror[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:58	获取失败!	{"error": "Authorities: unsupported relations for schema SysUser; Authority: unsupported relations for schema SysUser"}

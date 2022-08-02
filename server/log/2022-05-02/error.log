@@ -1,0 +1,1 @@
+[gin/server]2022/05/02 - 23:35:29.880	[31merror[0m	E:/代码相关/项目/study/go/gin/server/api/system/sys_user.go:37	注册失败!	{"error": "用户名已注册"}

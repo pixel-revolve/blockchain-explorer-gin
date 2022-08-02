@@ -1,0 +1,512 @@
+[gin/server]2022/08/01 - 09:29:56.781	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[45.492ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:29:56.795	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[12.343ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:29:56.798	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[3.023ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 09:29:56.799	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.504ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:29:56.800	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.683ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:29:56.800	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.505ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 09:29:56.802	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.466ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 09:29:56.803	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:29:56.803	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:29:56.806	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.508ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 09:29:56.954	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 09:29:56.986	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 09:30:44.727	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:30:44.731	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.321ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:30:44.733	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.077ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 09:30:44.733	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:30:44.733	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.067ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:30:44.734	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.515ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 09:30:44.737	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[2.369ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 09:30:44.738	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:30:44.739	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.103ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:30:44.740	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.165ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 09:30:44.741	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 09:30:44.780	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 09:39:02.638	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:39:02.642	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.737ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:39:02.645	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.900ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 09:39:02.646	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:39:02.647	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.962ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:39:02.648	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.525ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 09:39:02.649	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.592ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 09:39:02.650	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 09:39:02.652	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.517ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 09:39:02.654	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.830ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 09:39:02.655	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 09:39:02.701	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 10:01:54.997	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:01:55.000	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[2.530ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:01:55.002	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.226ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 10:01:55.003	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:01:55.003	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.587ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:01:55.004	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 10:01:55.005	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.012ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 10:01:55.006	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:01:55.007	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.638ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:01:55.008	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.904ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 10:01:55.009	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 10:01:55.037	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 10:11:23.239	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.927ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:11:23.242	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[2.478ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:11:23.245	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.247ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 10:11:23.245	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:11:23.247	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.325ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:11:23.247	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.637ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 10:11:23.252	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[2.443ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 10:11:23.252	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:11:23.254	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.819ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:11:23.255	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.107ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 10:11:23.255	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 10:11:23.284	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 10:14:54.910	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.549ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:14:54.911	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.318ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:14:54.913	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.987ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 10:14:54.914	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:14:54.914	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.588ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:14:54.915	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.507ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 10:14:54.916	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.268ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 10:14:54.917	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.524ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:14:54.917	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.540ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:14:54.918	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.728ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 10:14:54.918	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 10:14:54.947	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 10:16:53.079	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:16:53.081	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.533ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:16:53.083	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.044ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 10:16:53.083	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:16:53.084	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.685ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:16:53.085	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 10:16:53.086	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.296ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 10:16:53.087	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 10:16:53.088	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.539ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 10:16:53.088	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.665ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 10:16:53.089	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 10:16:53.127	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 11:20:21.783	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.510ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:20:21.791	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[6.505ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:20:21.821	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[28.626ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 11:20:21.823	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.531ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:20:21.827	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.654ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:20:21.828	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.509ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 11:20:21.833	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[3.774ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 11:20:21.834	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:20:21.835	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.798ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:20:21.837	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.723ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 11:20:21.837	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 11:20:21.919	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 11:33:56.189	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.513ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:33:56.193	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.628ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:33:56.195	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.991ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 11:33:56.196	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.504ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:33:56.197	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.504ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:33:56.197	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.919ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 11:33:56.199	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.156ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 11:33:56.201	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:33:56.201	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:33:56.203	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.237ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 11:33:56.203	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 11:33:56.229	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 11:53:18.077	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.091ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:53:18.083	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[5.875ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:53:18.087	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[3.498ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 11:53:18.088	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.997ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:53:18.088	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:53:18.089	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 11:53:18.092	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[2.992ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 11:53:18.092	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 11:53:18.094	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.514ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 11:53:18.096	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.517ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 11:53:18.096	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 11:53:18.128	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 16:05:46.648	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[1.929ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:05:46.723	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[75.048ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:05:46.737	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[13.020ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 16:05:46.738	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.998ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:05:46.739	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.998ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:05:46.742	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[2.991ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 16:05:46.757	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[15.471ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 16:05:46.759	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:05:46.759	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.756ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:05:46.765	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[4.685ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 16:05:46.765	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 16:05:46.816	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 16:09:38.858	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.513ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:09:38.864	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[4.679ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:09:38.869	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[4.046ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 16:09:38.871	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:09:38.875	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.998ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:09:38.876	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 16:09:38.886	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[9.482ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 16:09:38.891	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:09:38.892	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.749ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:09:38.897	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[4.537ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 16:09:38.898	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 16:09:38.964	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 16:11:25.989	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:11:25.992	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[2.530ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:11:25.993	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.935ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 16:11:25.994	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:11:25.994	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.649ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:11:25.995	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.503ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 16:11:25.996	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.355ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 16:11:25.996	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:11:25.998	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.656ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:11:25.998	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.717ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 16:11:25.999	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 16:11:26.025	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 16:24:57.440	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.510ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:24:57.444	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.913ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:24:57.446	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.903ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 16:24:57.446	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:24:57.447	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.665ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:24:57.448	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.511ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 16:24:57.450	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.582ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 16:24:57.451	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:24:57.451	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.718ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:24:57.452	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.084ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 16:24:57.453	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 16:24:57.478	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 16:56:28.856	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:56:28.866	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[8.783ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:56:28.873	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[6.469ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 16:56:28.874	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.514ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:56:28.875	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.032ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:56:28.876	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.517ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 16:56:28.879	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[2.583ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 16:56:28.880	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.516ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 16:56:28.881	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[1.025ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 16:56:28.884	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.180ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 16:56:28.885	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 16:56:28.932	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
+[gin/server]2022/08/01 - 17:45:15.994	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 17:45:16.029	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[3.638ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 17:45:16.031	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[2.368ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/01 - 17:45:16.031	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 17:45:16.032	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 17:45:16.033	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[0.998ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/01 - 17:45:16.035	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[1.120ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/01 - 17:45:16.036	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/01 - 17:45:16.036	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/01 - 17:45:16.038	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32mD:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[0.914ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/01 - 17:45:16.187	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/01 - 17:45:16.223	[34minfo[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:24	server run success on 	{"address": ":8080"}
