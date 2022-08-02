@@ -14,7 +14,7 @@ cd server
 go mod tidy
 go run main.go
 ```
-![img.png](static/log.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/log.png)
 
 ### start the font end
 ```bash
@@ -27,25 +27,25 @@ npm run serve
 ## Page display
 **Dashboard**
 
-![img.png](static/dashboard.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/dashboard.png)
 
 **Network**
 
-![img.png](static/network.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/network.png)
 
 **Block**
 
-![img.png](static/block.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/block.png)
 
 **Transaction**
 
-![img.png](static/transaction.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/transaction.png)
 
 **Chaincode**
 
-![img.png](static/chaincode.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/chaincode.png)
 
 **Channel**
 
-![img.png](static/channel.png)
+![img.png](http://pixel-revolve.test.upcdn.net/images/blockchain-explorer-gin/channel.png)
 
