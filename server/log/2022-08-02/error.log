@@ -1,0 +1,1 @@
+[gin/server]2022/08/02 - 11:21:59.119	[31merror[0m	D:/Project Files/Project/blockchain-explorer-gin/server/core/server.go:28	listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.

@@ -1,2 +1,51 @@
 # Blockchain-Explorer-Gin
-该项目为基于fabric搭建的区块链浏览器。后端使用gin作为web框架，使用fabric-sdk-go进行开发。前端使用Vue框架搭建。
+
+The project is a blockchain browser based on fabric. The back-end uses gin as the web framework and uses fabric SDK go for development. The front end is built with Vue framework.
+
+## Start
+By default, you have set up the fabric network, and you need to set up at least one peer node along with one organization.
+
+If you've already done this, then start blockchain-explorer-gin
+
+### start the back end
+```bash
+cd server
+
+go mod tidy
+go run main.go
+```
+![img.png](static/log.png)
+
+### start the font end
+```bash
+cd client
+
+npm install
+npm run serve
+```
+
+## Page display
+**Dashboard**
+
+![img.png](static/dashboard.png)
+
+**Network**
+
+![img.png](static/network.png)
+
+**Block**
+
+![img.png](static/block.png)
+
+**Transaction**
+
+![img.png](static/transaction.png)
+
+**Chaincode**
+
+![img.png](static/chaincode.png)
+
+**Channel**
+
+![img.png](static/channel.png)
+
