@@ -7,7 +7,7 @@
     </el-col>
     <el-col :span="11"><div class="grid-content ep-bg-purple" />
       <el-card class="box-card" style="margin-top: 20%">
-        <h1>{{this.$store.state.home.cardList[1].title}}</h1>
+        <h1>Transactions</h1>
         <br><br>
         <h3>{{this.$store.state.home.cardList[1].number}}</h3>
       </el-card>
