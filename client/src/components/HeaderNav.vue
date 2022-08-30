@@ -3,17 +3,19 @@
     <el-menu
         class="el-menu-demo"
         mode="horizontal"
+        :ellipsis="false"
         @select="handleSelect"
-        background-color="rgba(0,161,157,0.83)"
-        text-color="#fff"
-        active-text-color="#FFD500FF">
-      <el-menu-item style="font-family: Copperplate,Fantasy,SansSerif;font-size: 2vw" @click.native="goToHomePage">BLOCKCHAIN-EXPLORER</el-menu-item>
-      <el-menu-item index="1">DASHBOARD</el-menu-item>
-      <el-menu-item index="2">NETWORK</el-menu-item>
+        background-color="rgba(0,0,0,0.84)"
+        text-color="#DEB887"
+        active-text-color="rgba(255,255,255,1)"
+        style="border-color: black">
+      <el-menu-item style="font-family: Copperplate,Fantasy,SansSerif;font-size: 2vw" @click.native="goToHomePage" index="0">BLOCKCHAIN-EXPLORER</el-menu-item>
+      <div class="flex-grow" />
+      <el-menu-item index="1">NODES</el-menu-item>
       <el-menu-item index="3">BLOCKS</el-menu-item>
       <el-menu-item index="4">TRANSACTIONS</el-menu-item>
       <el-menu-item index="5">CHAINCODES</el-menu-item>
-      <el-menu-item index="6">CHANNELS</el-menu-item>
+      <el-menu-item index="2">NETWORK</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -58,4 +60,7 @@ export default {
 </script>
 
 <style scoped>
+.flex-grow {
+  flex-grow: 1;
+}
 </style>

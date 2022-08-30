@@ -18,6 +18,10 @@ export default {
 }
 
 body{
-  background-color: #f1f1f1;
+  background-color: rgba(0,0,0,1);
+}
+
+router-view{
+  border-color: #DEB887;
 }
 </style>
