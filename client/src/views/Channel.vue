@@ -2,8 +2,8 @@
   <div style="margin-top: 2vh">
     <el-table
         :data="$store.state.channel.channelList"
-        border
-        style="width: 90vw;margin-left: 5vw;margin-right: 5vw">
+        :header-cell-style="{background:'black',color:'#DEB887', borderColor: '#DEB887'}"
+        style="width: 90vw;margin-left: 5vw;margin-right: 5vw;background-color: black;border-color: black; color: #DEB887">
       <el-table-column
           prop="ID"
           label="ID">

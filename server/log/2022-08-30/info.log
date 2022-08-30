@@ -1,0 +1,89 @@
+[gin/server]2022/08/30 - 14:03:58.796	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:03:58.812	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:44
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:05:32.308	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:05:32.321	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:44
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:05:52.025	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:05:52.042	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:44
+[0m[31m[error] [0mfailed to initialize database, got error Error 1049: Unknown database 'blockchain_explorer'
+
+[gin/server]2022/08/30 - 14:08:10.214	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:09:18.056	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:12:46.854	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:13:28.047	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:13:28.062	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:44
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:13:47.852	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:13:47.867	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:44
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:14:06.739	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:14:23.167	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[35m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm_mysql.go:24
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+[gin/server]2022/08/30 - 14:15:26.752	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[1.775ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/30 - 14:15:26.786	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[33.122ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/30 - 14:15:26.815	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[28.625ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/30 - 14:15:26.942	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[126.430ms] [34;1m[rows:0][0m CREATE TABLE `sys_users` (`id` bigint unsigned AUTO_INCREMENT,`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`deleted_at` datetime(3) NULL,`uuid` varchar(191) COMMENT '用户UUID',`username` varchar(191) COMMENT '用户登录名',`password` varchar(191) COMMENT '用户登录密码',`nick_name` varchar(191) DEFAULT '系统用户' COMMENT '用户昵称',`phone` varchar(191) COMMENT '用户手机号',`email` varchar(191) COMMENT '用户邮箱',PRIMARY KEY (`id`),INDEX `idx_sys_users_deleted_at` (`deleted_at`))
+
+[gin/server]2022/08/30 - 14:15:26.942	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
+[gin/server]2022/08/30 - 14:15:49.254	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.117ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/30 - 14:15:49.259	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[4.663ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/30 - 14:15:49.265	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[6.634ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND table_type = 'BASE TABLE'
+
+[gin/server]2022/08/30 - 14:15:49.265	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.169ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/30 - 14:15:49.266	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.598ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/30 - 14:15:49.277	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:163
+[0m[33m[10.997ms] [34;1m[rows:-][0m SELECT * FROM `sys_users` LIMIT 1
+
+[gin/server]2022/08/30 - 14:15:49.281	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:181
+[0m[33m[3.278ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' ORDER BY ORDINAL_POSITION
+
+[gin/server]2022/08/30 - 14:15:49.281	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:250
+[0m[33m[0.079ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+[gin/server]2022/08/30 - 14:15:49.281	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/pkg/mod/gorm.io/driver/mysql@v1.3.5/migrator.go:253
+[0m[33m[0.664ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'blockchain_explorer%' ORDER BY SCHEMA_NAME='blockchain_explorer' DESC,SCHEMA_NAME limit 1
+
+[gin/server]2022/08/30 - 14:15:49.283	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/internal/logger.go:31	[32m/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:29
+[0m[33m[1.399ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'blockchain_explorer' AND table_name = 'sys_users' AND index_name = 'idx_sys_users_deleted_at'
+
+[gin/server]2022/08/30 - 14:15:49.283	[34minfo[0m	/Users/keepcup/go/src/blockchain-explorer-gin/server/initialize/gorm.go:41	register table success
