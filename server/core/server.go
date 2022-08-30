@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"gin/global"
 	"gin/initialize"
+	"gin/web"
 	"go.uber.org/zap"
 )
 
@@ -16,10 +17,13 @@ type server interface {
 func RunWindowsServer() {
 	// 初始化路由
 	Router := initialize.Routers()
+
 	// 从全局配置中获取web服务器端口
 	address := fmt.Sprintf(":%d", global.GVA_CONFIG.System.Addr)
 	// 使用地址和Router构造一个server
 	s := initServer(address, Router)
+
+	web.LaunchWeb(Router)
 
 	global.GVA_LOG.Info("server run success on ", zap.String("address", address))
 
