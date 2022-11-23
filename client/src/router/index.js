@@ -7,15 +7,27 @@ import Network from "@/views/Network";
 import Block from "@/views/Block";
 import Chaincode from "@/views/Chaincode";
 import Channel from "@/views/Channel";
+import LoginView from "@/views/LoginView";
+import RegisterView from "@/views/RegisterView";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/login',
+    name: 'login',
+    component: LoginView,
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: RegisterView,
+  },
+  {
     path: '/',
     name: 'home',
     component: HomeView,
-    redirect: '/dashboard',
+    redirect: '/login',
     children:[
       {
         path: '/dashboard',
